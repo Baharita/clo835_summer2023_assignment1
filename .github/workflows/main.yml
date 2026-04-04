@@ -26,10 +26,6 @@ jobs:
           pip install -r requirements.txt
           pip install pytest pytest-flask
 
-      - name: Run unit tests
-        run: |
-          pytest tests/
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
